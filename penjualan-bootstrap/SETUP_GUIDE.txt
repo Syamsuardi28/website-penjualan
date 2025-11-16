@@ -1,0 +1,252 @@
+=====================================
+  TECHSTORE - PANDUAN SETUP CEPAT
+=====================================
+
+📦 STRUKTUR FOLDER YANG HARUS DIBUAT:
+--------------------------------------
+
+techstore/
+│
+├── index.html
+├── product.html
+├── cart.html
+├── checkout.html
+├── README.md
+│
+├── css/
+│   └── styles.css
+│
+├── js/
+│   └── app.js
+│
+└── assets/
+    └── images/
+        (gambar akan otomatis load dari Unsplash CDN)
+
+
+🚀 LANGKAH SETUP:
+-----------------
+
+1. BUAT FOLDER UTAMA
+   - Buat folder baru bernama "techstore"
+
+2. BUAT SUBFOLDER
+   - Dalam folder "techstore", buat:
+     * Folder "css"
+     * Folder "js"
+     * Folder "assets", lalu di dalamnya buat folder "images"
+
+3. COPY FILE HTML
+   - Copy semua file .html ke root folder "techstore":
+     * index.html
+     * product.html
+     * cart.html
+     * checkout.html
+
+4. COPY FILE CSS
+   - Copy file styles.css ke folder "css/"
+
+5. COPY FILE JAVASCRIPT
+   - Copy file app.js ke folder "js/"
+
+6. BUKA WEBSITE
+   - Double click index.html
+   - ATAU gunakan Live Server (VS Code extension)
+   - ATAU jalankan: python -m http.server 8000
+
+
+✅ CHECKLIST VERIFIKASI:
+------------------------
+
+[ ] File index.html ada di root folder
+[ ] File product.html ada di root folder
+[ ] File cart.html ada di root folder
+[ ] File checkout.html ada di root folder
+[ ] File styles.css ada di folder css/
+[ ] File app.js ada di folder js/
+[ ] Folder assets/images/ sudah dibuat (bisa kosong)
+[ ] Semua file HTML bisa dibuka di browser
+[ ] Tidak ada error di console browser (tekan F12)
+[ ] Produk muncul di halaman utama
+[ ] Search, filter, sort berfungsi
+[ ] Bisa tambah produk ke keranjang
+[ ] Badge cart menampilkan jumlah item
+[ ] Halaman cart menampilkan item
+[ ] Halaman checkout bisa diakses
+[ ] Form validation berfungsi
+
+
+🎯 QUICK TEST:
+--------------
+
+1. Buka index.html di browser
+2. Klik tombol "Keranjang" pada salah satu produk
+3. Cek badge di navbar (harus muncul angka 1)
+4. Klik "Keranjang" di navbar
+5. Harus muncul produk yang tadi ditambahkan
+6. Ubah quantity, harus update total
+7. Klik "Lanjut ke Checkout"
+8. Isi form dan klik "Buat Pesanan"
+9. Harus muncul alert sukses
+
+
+⚠️ TROUBLESHOOTING:
+-------------------
+
+MASALAH: Produk tidak muncul
+SOLUSI: 
+- Pastikan app.js ter-load (cek di Network tab F12)
+- Cek console untuk error
+- Pastikan path js/app.js benar
+
+MASALAH: CSS tidak apply
+SOLUSI:
+- Pastikan styles.css ada di folder css/
+- Cek path di HTML: <link rel="stylesheet" href="css/styles.css">
+- Clear cache browser (Ctrl+F5)
+
+MASALAH: Cart tidak tersimpan
+SOLUSI:
+- Pastikan localStorage tidak diblokir
+- Jangan gunakan mode private/incognito untuk test persistensi
+- Clear localStorage: localStorage.clear() di console
+
+MASALAH: Gambar tidak muncul
+SOLUSI:
+- Pastikan koneksi internet aktif (gambar dari Unsplash CDN)
+- Tunggu beberapa saat untuk loading
+- Cek Network tab di DevTools
+
+
+🔧 KUSTOMISASI CEPAT:
+---------------------
+
+1. GANTI NAMA TOKO:
+   - Edit semua file HTML
+   - Cari: "TechStore"
+   - Ganti dengan nama Anda
+
+2. GANTI WARNA TEMA:
+   - Edit css/styles.css
+   - Cari: #667eea (warna purple)
+   - Ganti dengan warna pilihan Anda
+
+3. TAMBAH PRODUK:
+   - Edit js/app.js
+   - Cari: const products = [...]
+   - Tambah objek produk baru di array
+
+4. UBAH ONGKIR:
+   - Edit js/app.js
+   - Cari: const shipping = subtotal > 0 ? 25000 : 0;
+   - Ubah angka 25000
+
+
+📱 TEST RESPONSIVENESS:
+-----------------------
+
+Desktop (1920px):
+- Buka di browser normal
+- Produk harus 4 kolom
+
+Tablet (768px):
+- Tekan F12, toggle device toolbar
+- Pilih iPad
+- Produk harus 2 kolom
+
+Mobile (375px):
+- Pilih iPhone di device toolbar
+- Produk harus 1 kolom
+- Navbar harus collapse jadi hamburger menu
+
+
+💡 TIPS:
+--------
+
+1. Gunakan VS Code dengan extension:
+   - Live Server (untuk auto reload)
+   - Prettier (untuk format code)
+   - Auto Rename Tag
+
+2. Test di berbagai browser:
+   - Chrome (recommended)
+   - Firefox
+   - Safari (jika pakai Mac)
+   - Edge
+
+3. Bookmark untuk development:
+   - Bootstrap Docs: https://getbootstrap.com/docs/5.3
+   - Bootstrap Icons: https://icons.getbootstrap.com
+   - Unsplash: https://unsplash.com
+
+4. Shortcut berguna:
+   - F12: Buka DevTools
+   - Ctrl+Shift+C: Inspect Element
+   - Ctrl+Shift+M: Toggle device toolbar
+   - F5: Refresh
+   - Ctrl+F5: Hard refresh (clear cache)
+
+
+🎓 LEARNING PATH:
+-----------------
+
+Pemula:
+- Pahami struktur HTML terlebih dahulu
+- Pelajari cara kerja Bootstrap grid
+- Eksplorasi Bootstrap components
+
+Menengah:
+- Pelajari JavaScript di app.js
+- Pahami localStorage API
+- Modifikasi fungsi-fungsi yang ada
+
+Lanjutan:
+- Integrasikan dengan backend (Node.js/PHP)
+- Tambah fitur authentication
+- Implementasi payment gateway
+
+
+📚 RESOURCES:
+-------------
+
+Official Documentation:
+- Bootstrap: https://getbootstrap.com
+- MDN Web Docs: https://developer.mozilla.org
+- JavaScript.info: https://javascript.info
+
+Free Images:
+- Unsplash: https://unsplash.com
+- Pexels: https://pexels.com
+- Pixabay: https://pixabay.com
+
+Icons:
+- Bootstrap Icons: https://icons.getbootstrap.com
+- Font Awesome: https://fontawesome.com
+- Heroicons: https://heroicons.com
+
+
+🎉 SELAMAT!
+-----------
+
+Jika semua checklist sudah ✅, website Anda sudah siap!
+
+Langkah selanjutnya:
+1. Kustomisasi sesuai kebutuhan
+2. Tambah lebih banyak produk
+3. Deploy ke hosting (Netlify, Vercel, dll)
+4. Share dengan teman-teman!
+
+
+📧 NEED HELP?
+-------------
+
+Jika ada masalah:
+1. Baca README.md untuk dokumentasi lengkap
+2. Cek console browser untuk error
+3. Google error message yang muncul
+4. Tanya di Stack Overflow atau forum developer
+
+
+=====================================
+     HAPPY CODING! 🚀
+=====================================

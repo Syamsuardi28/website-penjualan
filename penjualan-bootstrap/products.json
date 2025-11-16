@@ -1,0 +1,259 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "iPhone 15 Pro Max",
+      "category": "smartphone",
+      "price": 19999000,
+      "image": "https://images.unsplash.com/photo-1678685888221-cda773a3dcdb?w=500",
+      "rating": 4.9,
+      "description": "Smartphone flagship dengan chip A17 Pro dan kamera 48MP yang luar biasa. Layar Super Retina XDR 6.7 inch.",
+      "stock": 15,
+      "isNew": true,
+      "brand": "Apple",
+      "sku": "IP15PM-256-TB",
+      "specifications": {
+        "display": "6.7 inch Super Retina XDR",
+        "processor": "A17 Pro Bionic",
+        "ram": "8GB",
+        "storage": "256GB",
+        "camera": "48MP + 12MP + 12MP",
+        "battery": "4422 mAh",
+        "os": "iOS 17"
+      }
+    },
+    {
+      "id": 2,
+      "name": "MacBook Pro M3",
+      "category": "laptop",
+      "price": 24999000,
+      "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500",
+      "rating": 4.8,
+      "description": "Laptop profesional dengan chip M3 yang powerful. RAM 16GB, SSD 512GB, layar Retina 14 inch.",
+      "stock": 10,
+      "isNew": true,
+      "brand": "Apple",
+      "sku": "MBP-M3-14-512",
+      "specifications": {
+        "display": "14 inch Retina Display",
+        "processor": "Apple M3",
+        "ram": "16GB Unified Memory",
+        "storage": "512GB SSD",
+        "graphics": "10-core GPU",
+        "battery": "Up to 17 hours",
+        "weight": "1.55 kg"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Samsung Galaxy S24 Ultra",
+      "category": "smartphone",
+      "price": 17999000,
+      "image": "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=500",
+      "rating": 4.7,
+      "description": "Smartphone Android premium dengan S Pen dan kamera 200MP. Layar Dynamic AMOLED 6.8 inch.",
+      "stock": 20,
+      "isNew": true,
+      "brand": "Samsung",
+      "sku": "S24U-256-TB",
+      "specifications": {
+        "display": "6.8 inch Dynamic AMOLED 2X",
+        "processor": "Snapdragon 8 Gen 3",
+        "ram": "12GB",
+        "storage": "256GB",
+        "camera": "200MP + 50MP + 12MP + 10MP",
+        "battery": "5000 mAh",
+        "os": "Android 14"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Sony WH-1000XM5",
+      "category": "audio",
+      "price": 5499000,
+      "image": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=500",
+      "rating": 4.9,
+      "description": "Headphone premium dengan noise cancellation terbaik di kelasnya. Battery life hingga 30 jam.",
+      "stock": 30,
+      "isNew": false,
+      "brand": "Sony",
+      "sku": "WH1000XM5-BLK",
+      "specifications": {
+        "type": "Over-ear Wireless",
+        "driver": "30mm",
+        "frequency": "4Hz - 40kHz",
+        "battery": "30 hours",
+        "charging": "USB-C",
+        "weight": "250g",
+        "features": "Active Noise Cancellation"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Dell XPS 13",
+      "category": "laptop",
+      "price": 18999000,
+      "image": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=500",
+      "rating": 4.6,
+      "description": "Laptop ultrabook dengan layar InfinityEdge 13.4 inch. Intel Core i7 Gen 13, RAM 16GB.",
+      "stock": 12,
+      "isNew": false,
+      "brand": "Dell",
+      "sku": "XPS13-I7-512",
+      "specifications": {
+        "display": "13.4 inch FHD+ InfinityEdge",
+        "processor": "Intel Core i7-1355U",
+        "ram": "16GB LPDDR5",
+        "storage": "512GB SSD",
+        "graphics": "Intel Iris Xe",
+        "battery": "Up to 12 hours",
+        "weight": "1.27 kg"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Apple Watch Series 9",
+      "category": "wearable",
+      "price": 6999000,
+      "image": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=500",
+      "rating": 4.8,
+      "description": "Smartwatch dengan sensor kesehatan lengkap dan always-on Retina display. GPS + Cellular.",
+      "stock": 25,
+      "isNew": true,
+      "brand": "Apple",
+      "sku": "AWS9-45-GPS-CEL",
+      "specifications": {
+        "display": "Always-On Retina LTPO OLED",
+        "case": "45mm Aluminum",
+        "processor": "S9 SiP",
+        "storage": "64GB",
+        "battery": "Up to 18 hours",
+        "sensors": "ECG, Blood Oxygen, Heart Rate",
+        "connectivity": "GPS + Cellular"
+      }
+    },
+    {
+      "id": 7,
+      "name": "AirPods Pro 2",
+      "category": "audio",
+      "price": 3799000,
+      "image": "https://images.unsplash.com/photo-1606841837239-c5a1a4a07af7?w=500",
+      "rating": 4.7,
+      "description": "Earbuds wireless dengan Active Noise Cancellation dan Spatial Audio. Chip H2 untuk audio premium.",
+      "stock": 40,
+      "isNew": false,
+      "brand": "Apple",
+      "sku": "AIRPODS-PRO2-USBC",
+      "specifications": {
+        "type": "In-ear True Wireless",
+        "driver": "Custom Apple",
+        "chip": "Apple H2",
+        "battery": "6 hours (ANC on)",
+        "case_battery": "30 hours total",
+        "charging": "USB-C, MagSafe, Qi",
+        "features": "Adaptive Audio, ANC, Transparency"
+      }
+    },
+    {
+      "id": 8,
+      "name": "iPad Pro M2",
+      "category": "smartphone",
+      "price": 15999000,
+      "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=500",
+      "rating": 4.8,
+      "description": "Tablet profesional dengan chip M2 dan layar Liquid Retina XDR 12.9 inch. Support Apple Pencil.",
+      "stock": 18,
+      "isNew": false,
+      "brand": "Apple",
+      "sku": "IPADPRO-M2-129-256",
+      "specifications": {
+        "display": "12.9 inch Liquid Retina XDR",
+        "processor": "Apple M2",
+        "ram": "8GB",
+        "storage": "256GB",
+        "camera": "12MP Wide + 10MP Ultra Wide",
+        "battery": "Up to 10 hours",
+        "accessories": "Apple Pencil (2nd gen), Magic Keyboard"
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": "smartphone",
+      "name": "Smartphone",
+      "description": "Smartphone dan tablet terbaru",
+      "icon": "phone"
+    },
+    {
+      "id": "laptop",
+      "name": "Laptop",
+      "description": "Laptop dan notebook",
+      "icon": "laptop"
+    },
+    {
+      "id": "audio",
+      "name": "Audio",
+      "description": "Headphone dan speaker",
+      "icon": "headphones"
+    },
+    {
+      "id": "wearable",
+      "name": "Wearable",
+      "description": "Smartwatch dan fitness tracker",
+      "icon": "watch"
+    }
+  ],
+  "settings": {
+    "shipping": {
+      "flatRate": 25000,
+      "freeShippingMinimum": 1000000,
+      "estimatedDays": "2-5 hari kerja"
+    },
+    "discount": {
+      "minimumPurchase": 10000000,
+      "amount": 500000,
+      "type": "fixed"
+    },
+    "payment": {
+      "methods": [
+        {
+          "id": "bank",
+          "name": "Transfer Bank",
+          "icon": "bank",
+          "available": true
+        },
+        {
+          "id": "credit",
+          "name": "Kartu Kredit/Debit",
+          "icon": "credit-card",
+          "available": true
+        },
+        {
+          "id": "ewallet",
+          "name": "E-Wallet",
+          "icon": "phone",
+          "available": true,
+          "providers": ["GoPay", "OVO", "Dana", "ShopeePay"]
+        },
+        {
+          "id": "cod",
+          "name": "COD (Bayar di Tempat)",
+          "icon": "cash",
+          "available": true
+        }
+      ]
+    },
+    "contact": {
+      "email": "info@techstore.com",
+      "phone": "+62 812-3456-7890",
+      "address": "Jl. Teknologi No. 123, Jakarta",
+      "workingHours": "Senin - Jumat: 09:00 - 18:00"
+    },
+    "social": {
+      "facebook": "https://facebook.com/techstore",
+      "instagram": "https://instagram.com/techstore",
+      "twitter": "https://twitter.com/techstore",
+      "youtube": "https://youtube.com/techstore"
+    }
+  }
+}

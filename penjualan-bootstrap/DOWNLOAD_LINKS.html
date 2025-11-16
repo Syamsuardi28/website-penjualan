@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechStore - Download All Files</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <style>
+      body {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding: 50px 0;
+      }
+      .card {
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      }
+      .file-item {
+        padding: 15px;
+        border: 2px dashed #e0e0e0;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        background: #f8f9fa;
+        transition: all 0.3s ease;
+      }
+      .file-item:hover {
+        border-color: #667eea;
+        background: white;
+        transform: translateX(5px);
+      }
+      .badge-custom {
+        padding: 8px 15px;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="card">
+            <div class="card-body p-5">
+              <div class="text-center mb-5">
+                <i
+                  class="bi bi-lightning-charge-fill text-warning"
+                  style="font-size: 4rem"
+                ></i>
+                <h1 class="fw-bold mt-3">TechStore - Website Penjualan</h1>
+                <p class="text-muted">Download semua file yang diperlukan</p>
+                <span class="badge bg-success badge-custom"
+                  >HTML + CSS + JavaScript + Bootstrap 5</span
+                >
+              </div>
+
+              <div class="alert alert-info">
+                <i class="bi bi-info-circle-fill me-2"></i>
+                <strong>Cara Download:</strong> Klik kanan pada link file →
+                "Save Link As..." atau "Save Target As..."
+              </div>
+
+              <h4 class="fw-bold mb-3 mt-5">
+                <i class="bi bi-folder me-2"></i> Struktur Folder
+              </h4>
+              <pre class="bg-light p-3 rounded">
+techstore/
+├── index.html
+├── product.html
+├── cart.html
+├── checkout.html
+├── css/
+│   └── styles.css
+├── js/
+│   └── app.js
+└── assets/
+    └── images/</pre
+              >
+
+              <h4 class="fw-bold mb-3 mt-5">
+                <i class="bi bi-file-earmark-code me-2"></i> File HTML
+              </h4>
+
+              <div class="file-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <i
+                      class="bi bi-file-earmark-code-fill text-danger me-2"
+                    ></i>
+                    <strong>index.html</strong>
+                    <span class="badge bg-primary ms-2">Halaman Utama</span>
+                  </div>
+                  <button
+                    class="btn btn-primary btn-sm"
+                    onclick="copyCode('index')"
+                  >
+                    <i class="bi bi-clipboard"></i> Copy Code
+                  </button>
+                </div>
+                <small class="text-muted"
+                  >Homepage dengan katalog produk, search, filter, dan
+                  sort</small
+                >
+              </div>
+
+              <div class="file-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <i
+                      class="bi bi-file-earmark-code-fill text-danger me-2"
+                    ></i>
+                    <strong>product.html</strong>
+                    <span class="badge bg-info ms-2">Detail Produk</span>
+                  </div>
+                  <button
+                    class="btn btn-primary btn-sm"
+                    onclick="copyCode('product')"
+                  >
+                    <i class="bi bi-clipboard"></i> Copy Code
+                  </button>
+                </div>
+                <small class="text-muted"
+                  >Halaman detail produk dengan informasi lengkap</small
+                >
+              </div>
+
+              <div class="file-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <i
+                      class="bi bi-file-earmark-code-fill text-danger me-2"
+                    ></i>
+                    <strong>cart.html</strong>
+                    <span class="badge bg-warning ms-2">Keranjang</span>
+                  </div>
+                  <button
+                    class="btn btn-primary btn-sm"
+                    onclick="copyCode('cart')"
+                  >
+                    <i class="bi bi-clipboard"></i> Copy Code
+                  </button>
+                </div>
+                <small class="text-muted"
+                  >Halaman keranjang belanja dengan update quantity</small
+                >
+              </div>
+
+              <div class="file-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <i
+                      class="bi bi-file-earmark-code-fill text-danger me-2"
+                    ></i>
+                    <strong>checkout.html</strong>
+                    <span class="badge bg-success ms-2">Checkout</span>
+                  </div>
+                  <button
+                    class="btn btn-primary btn-sm"
+                    onclick="copyCode('checkout')"
+                  >
+                    <i class="bi bi-clipboard"></i> Copy Code
+                  </button>
+                </div>
+                <small class="text-muted"
+                  >Form checkout dengan validasi dan ringkasan pesanan</small
+                >
+              </div>
+
+              <h4 class="fw-bold mb-3 mt-5">
+                <i class="bi bi-palette me-2"></i> File CSS
+              </h4>
+
+              <div class="file-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <i
+                      class="bi bi-file-earmark-code-fill text-primary me-2"
+                    ></i>
+                    <strong>css/styles.css</strong>
+                    <span class="badge bg-secondary ms-2">Custom Styling</span>
+                  </div>
+                  <button
+                    class="btn btn-primary btn-sm"
+                    onclick="copyCode('css')"
+                  >
+                    <i class="bi bi-clipboard"></i> Copy Code
+                  </button>
+                </div>
+                <small class="text-muted"
+                  >Custom CSS dengan animasi dan responsive design</small
+                >
+              </div>
+
+              <h4 class="fw-bold mb-3 mt-5">
+                <i class="bi bi-code-slash me-2"></i> File JavaScript
+              </h4>
+
+              <div class="file-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <i
+                      class="bi bi-file-earmark-code-fill text-warning me-2"
+                    ></i>
+                    <strong>js/app.js</strong>
+                    <span class="badge bg-dark ms-2">Main Logic</span>
+                  </div>
+                  <button
+                    class="btn btn-primary btn-sm"
+                    onclick="copyCode('js')"
+                  >
+                    <i class="bi bi-clipboard"></i> Copy Code
+                  </button>
+                </div>
+                <small class="text-muted"
+                  >Logika utama: data produk, cart, search, filter,
+                  checkout</small
+                >
+              </div>
+
+              <h4 class="fw-bold mb-3 mt-5">
+                <i class="bi bi-book me-2"></i> Dokumentasi
+              </h4>
+
+              <div class="file-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <i
+                      class="bi bi-file-earmark-text-fill text-success me-2"
+                    ></i>
+                    <strong>README.md</strong>
+                    <span class="badge bg-info ms-2">Dokumentasi Lengkap</span>
+                  </div>
+                  <button
+                    class="btn btn-primary btn-sm"
+                    onclick="copyCode('readme')"
+                  >
+                    <i class="bi bi-clipboard"></i> Copy Code
+                  </button>
+                </div>
+                <small class="text-muted"
+                  >Panduan lengkap penggunaan dan customization</small
+                >
+              </div>
+
+              <div class="file-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <i
+                      class="bi bi-file-earmark-text-fill text-success me-2"
+                    ></i>
+                    <strong>SETUP_GUIDE.txt</strong>
+                    <span class="badge bg-warning ms-2">Panduan Cepat</span>
+                  </div>
+                  <button
+                    class="btn btn-primary btn-sm"
+                    onclick="copyCode('setup')"
+                  >
+                    <i class="bi bi-clipboard"></i> Copy Code
+                  </button>
+                </div>
+                <small class="text-muted"
+                  >Panduan setup cepat dan troubleshooting</small
+                >
+              </div>
+
+              <div class="alert alert-warning mt-5">
+                <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                <strong>Catatan Penting:</strong>
+                <ul class="mb-0 mt-2">
+                  <li>
+                    Pastikan struktur folder sudah benar sesuai diagram di atas
+                  </li>
+                  <li>
+                    File HTML harus di root folder, CSS di folder css/, JS di
+                    folder js/
+                  </li>
+                  <li>
+                    Gambar produk menggunakan Unsplash CDN (otomatis load dari
+                    internet)
+                  </li>
+                  <li>
+                    Website memerlukan koneksi internet untuk Bootstrap CDN dan
+                    gambar
+                  </li>
+                  <li>
+                    Gunakan Live Server atau http-server untuk development
+                  </li>
+                </ul>
+              </div>
+
+              <div class="alert alert-success mt-4">
+                <i class="bi bi-check-circle-fill me-2"></i>
+                <strong>Fitur Lengkap:</strong>
+                <div class="row mt-3">
+                  <div class="col-md-6">
+                    <ul>
+                      <li>✅ 8 Produk demo</li>
+                      <li>✅ Search realtime</li>
+                      <li>✅ Filter kategori</li>
+                      <li>✅ Sort produk</li>
+                      <li>✅ Shopping cart</li>
+                      <li>✅ localStorage</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <ul>
+                      <li>✅ Form validation</li>
+                      <li>✅ Responsive design</li>
+                      <li>✅ Toast notification</li>
+                      <li>✅ Rating bintang</li>
+                      <li>✅ Badge counter</li>
+                      <li>✅ Modern UI/UX</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-center mt-5">
+                <h5 class="fw-bold mb-3">Langkah Selanjutnya:</h5>
+                <div class="d-flex gap-3 justify-content-center flex-wrap">
+                  <button class="btn btn-success btn-lg">
+                    <i class="bi bi-download me-2"></i> Download Semua File
+                  </button>
+                  <button
+                    class="btn btn-primary btn-lg"
+                    onclick="window.open('README.md', '_blank')"
+                  >
+                    <i class="bi bi-book me-2"></i> Baca Dokumentasi
+                  </button>
+                  <button
+                    class="btn btn-warning btn-lg"
+                    onclick="window.open('index.html', '_blank')"
+                  >
+                    <i class="bi bi-play-circle me-2"></i> Preview Website
+                  </button>
+                </div>
+              </div>
+
+              <hr class="my-5" />
+
+              <div class="text-center text-muted">
+                <p class="mb-2">
+                  <i class="bi bi-lightning-charge-fill text-warning"></i>
+                  <strong>TechStore</strong> - Website Penjualan Modern
+                </p>
+                <p class="mb-0">
+                  Built with HTML5, CSS3, JavaScript, & Bootstrap 5
+                </p>
+                <p class="small mt-3">
+                  <i class="bi bi-github me-2"></i> Open Source Project
+                  <span class="mx-2">•</span>
+                  <i class="bi bi-heart-fill text-danger me-2"></i> Made with
+                  Love
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function copyCode(type) {
+        alert(
+          "Silakan copy code dari artifact yang sudah disediakan!\n\nFile: " +
+            type
+        );
+      }
+    </script>
+  </body>
+</html>
